@@ -5,6 +5,7 @@ Views all bans in your TShock database.
 
 Install node.js.
 
+execute: >npm install
 execute: >node Server.js [portnum]
 
 portnum is optional and defaults to 8000.
