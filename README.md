@@ -27,3 +27,6 @@ the permission level of superadmin.  You will notice that "thisisasecureresttoke
 These must match and your server must be restarted in order for this application to work.  A basic display of errors and
 bans has been added in the template folder.  Any modifications you wish to make can go there.  The public folder is for
 things such as css or javascript you wish to link to.
+
+Browse to http://yourip:port/bans to view your banlist.
+This makes the assumption that your TShock server is on the same ip as this application.
