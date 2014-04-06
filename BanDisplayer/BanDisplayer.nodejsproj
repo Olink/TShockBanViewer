@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>A9995411-9910-4780-86DB-D80BB7A9FEAE</ProjectGuid>
+    <StartupObject>Server.js</StartupObject>
+    <LaunchUrl>http://127.0.0.1:8000/</LaunchUrl>
+    <Name>BanDisplayer</Name>
+    <RootNamespace>BanDisplayer</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Server.js">
+      <SubType>Content</SubType>
+    </Compile>
+    <Compile Include="package.json">
+      <SubType>Content</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="bin\Debug\" />
+    <Folder Include="node_modules" />
+    <Folder Include="public" />
+    <Folder Include="templates" />
+    <Folder Include="routes" />
+    <Folder Include="obj\" />
+    <Folder Include="obj\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="configfile.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="debug.log">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="logger.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="obj\Debug\BanDisplayer.nodejsprojResolveAssemblyReference.cache">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="routes\routes.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\bans.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\error.html">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
